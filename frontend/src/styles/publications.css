@@ -1,0 +1,23 @@
+.publications {
+max-width: 900px;
+margin: 60px auto;
+}
+
+
+.publication-card {
+border-bottom: 1px solid #ddd;
+padding: 20px 0;
+}
+
+
+.publication-card h3 {
+margin: 5px 0;
+}
+
+
+.publication-card button {
+background: none;
+border: none;
+color: #f5b400;
+font-weight: bold;
+}

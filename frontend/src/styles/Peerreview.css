@@ -1,0 +1,259 @@
+/* =========================
+   PAGE WRAPPER
+========================= */
+.peerReviewPage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1.25fr 1.5fr 1fr;
+  gap: 3.5rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+/* =========================
+   TITLES
+========================= */
+.pageTitle {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.5px;
+  color: #111827;
+}
+
+.pageSubtitle {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.sectionHeading {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #111827;
+}
+
+.sectionHeading::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 3px;
+  background: #fdb913;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+}
+
+.centerTitle {
+  text-align: center;
+}
+
+/* =========================
+   LEFT COLUMN – ROLES
+========================= */
+.rolesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.roleCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.roleCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #fdb913, #e4a611);
+}
+
+.roleCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1);
+}
+
+.roleCard h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+  color: #111827;
+}
+
+.roleCard p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =========================
+   CENTER COLUMN – TIMELINE
+========================= */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #fdb913, #e4a611);
+  border-radius: 4px;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  position: relative;
+}
+
+.timelineCircle {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #fdb913, #e4a611);
+  color: #111827;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(253, 185, 19, 0.4);
+}
+
+.timelineCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.timelineCard:hover {
+  transform: translateX(6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.timelineCard h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+  color: #111827;
+}
+
+.timelineCard p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =========================
+   RIGHT COLUMN – BEST PRACTICES
+========================= */
+.bestPractices {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.practiceCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.2rem 1.75rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.practiceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #fdb913, #e4a611);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.practiceCard:hover::before {
+  transform: scaleX(1);
+}
+
+.practiceCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.practiceIcon {
+  font-size: 2.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.practiceCard h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+.practiceCard p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .peerReviewPage {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .centerTitle {
+    text-align: left;
+  }
+
+  .timeline::before {
+    left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .peerReviewPage {
+    padding: 3rem 1.25rem;
+  }
+
+  .pageTitle {
+    font-size: 2rem;
+  }
+}

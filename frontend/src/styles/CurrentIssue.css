@@ -1,0 +1,196 @@
+/* =======================
+   PAGE WRAPPER
+======================= */
+.currentIssue {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* =======================
+   CURRENT ISSUE HEADER
+   (NOT STICKY)
+======================= */
+.currentIssue .issueHeader {
+  position: static;            /* ✅ ENSURES NOT STICKY */
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.currentIssue .issueTitle {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.currentIssue .issueSubtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+/* =======================
+   CONTROLS
+======================= */
+.currentIssue .controlsSection {
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.currentIssue .searchBox {
+  position: relative;
+  max-width: 520px;
+}
+
+.currentIssue .searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.currentIssue .searchInput {
+  width: 100%;
+  padding: 0.9rem 1rem 0.9rem 2.75rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+}
+
+.currentIssue .searchInput:focus {
+  border-color: #fdb913;
+  box-shadow: 0 0 0 3px rgba(253, 185, 19, 0.15);
+  outline: none;
+}
+
+/* =======================
+   FILTERS
+======================= */
+.currentIssue .filterButtons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.currentIssue .filterBtn {
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.currentIssue .filterBtn:hover {
+  border-color: #fdb913;
+  color: #fdb913;
+}
+
+.currentIssue .filterBtn.active {
+  background: #fdb913;
+  border-color: #fdb913;
+}
+
+/* =======================
+   RESULTS
+======================= */
+.currentIssue .resultsInfo {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* =======================
+   GRID
+======================= */
+.currentIssue .publicationsGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+/* =======================
+   CARD
+======================= */
+.currentIssue .publicationCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.currentIssue .cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentIssue .category {
+  background: #fdb913;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.currentIssue .downloads {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.currentIssue .cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+}
+
+.currentIssue .authors {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.currentIssue .abstract {
+  margin: 1rem 0;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.currentIssue .cardFooter {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.currentIssue .readMore {
+  background: none;
+  border: none;
+  color: #fdb913;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+  .currentIssue {
+    padding: 3rem 1rem;
+  }
+
+  .currentIssue .publicationsGrid {
+    grid-template-columns: 1fr;
+  }
+}

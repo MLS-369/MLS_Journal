@@ -1,0 +1,132 @@
+/* PAGE WRAPPER */
+.submissionGuidelines {
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  padding: 4rem 2rem;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* LAYOUT */
+.mainLayout {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1.1fr;
+  gap: 3.5rem;
+}
+
+/* CONTENT */
+.contentColumn {
+  line-height: 1.75;
+  color: #111827;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+.sectionHeader {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 3rem 0 1rem;
+  position: relative;
+}
+
+.sectionHeader::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #fdb913;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+/* POLICY CARD */
+.policyBlock {
+  background: #ffffff;
+  border-left: 5px solid #fdb913;
+  padding: 1.75rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* TABLE */
+.timelineTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timelineTable th {
+  background: linear-gradient(135deg, #fdb913, #e4a611);
+  padding: 1rem;
+}
+
+.timelineTable td {
+  padding: 0.9rem 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: sticky;
+  top: 110px;
+}
+
+.actionButton {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 0.9rem;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.actionButton:hover {
+  background: #fdb913;
+  color: #111827;
+  transform: translateY(-2px);
+}
+
+/* PARTNERS */
+.indexingPartners {
+  margin-top: 2rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+
+.partnerLogos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.partnerLogo {
+  width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  padding: 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .mainLayout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    margin-top: 3rem;
+  }
+}
