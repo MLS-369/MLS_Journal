@@ -21,3 +21,18 @@ border: none;
 color: #f5b400;
 font-weight: bold;
 }
+
+/* ======================
+   DARK MODE
+====================== */
+[data-theme="dark"] .publications {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .publication-card {
+  border-bottom-color: #3a3a3a;
+}
+
+[data-theme="dark"] .publication-card h3 {
+  color: #e5e7eb;
+}

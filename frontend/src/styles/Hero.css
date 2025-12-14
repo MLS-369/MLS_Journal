@@ -74,3 +74,34 @@
   background-color: black;
   color: #f5b400;
 }
+
+/* ======================
+   DARK MODE
+====================== */
+[data-theme="dark"] .hero {
+  background-color: #121212;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .hero h1 {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .hero h1 span {
+  color: #f5b400;
+}
+
+[data-theme="dark"] .hero p,
+[data-theme="dark"] .hero-subtitle {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .secondary {
+  color: #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+[data-theme="dark"] .secondary:hover {
+  background-color: #e5e7eb;
+  color: #000;
+}

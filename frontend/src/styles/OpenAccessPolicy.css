@@ -1,0 +1,98 @@
+.openAccessPage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.openAccessTitle {
+  font-size: 2.5em;
+  font-weight: normal;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #1f2937;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.openAccessText {
+  line-height: 1.8;
+  font-size: 1.05em;
+  margin-bottom: 25px;
+  text-align: justify;
+  color: #374151;
+  transition: color 0.3s ease;
+}
+
+.openAccessBold {
+  line-height: 1.8;
+  font-size: 1.05em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #1f2937;
+  transition: color 0.3s ease;
+}
+
+.openAccessList {
+  list-style-type: disc;
+  padding-left: 25px;
+  font-size: 1.05em;
+  margin-bottom: 50px;
+  color: #374151;
+  transition: color 0.3s ease;
+}
+
+.openAccessListItem {
+  margin-bottom: 10px;
+  color: #374151;
+  transition: color 0.3s ease;
+}
+
+.openAccessImageContainer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.openAccessLicense {
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* ======================
+   DARK MODE
+====================== */
+[data-theme="dark"] .openAccessPage {
+  background: #121212;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .openAccessTitle {
+  color: #e5e7eb;
+  border-bottom-color: #e5e7eb;
+}
+
+[data-theme="dark"] .openAccessText {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .openAccessBold {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .openAccessList {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .openAccessListItem {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .openAccessLicense {
+  color: #9ca3af;
+}
+

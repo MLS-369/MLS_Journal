@@ -67,3 +67,23 @@
 .our-people.light-theme .our-people-link a:hover {
   color: #b8941f;
 }
+
+/* ======================
+   DARK MODE
+====================== */
+[data-theme="dark"] .our-people {
+  background-color: #121212;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .our-people-heading {
+  color: #FDB913;
+}
+
+[data-theme="dark"] .our-people-link a {
+  color: #FDB913;
+}
+
+[data-theme="dark"] .our-people-link a:hover {
+  color: #f5b001;
+}

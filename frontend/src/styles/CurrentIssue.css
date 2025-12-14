@@ -183,6 +183,76 @@
 }
 
 /* =======================
+   DARK MODE
+======================= */
+[data-theme="dark"] .currentIssue {
+  background: #121212;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .currentIssue .issueTitle {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .currentIssue .issueSubtitle {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .currentIssue .searchInput {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .currentIssue .searchInput:focus {
+  border-color: #fdb913;
+}
+
+[data-theme="dark"] .currentIssue .filterBtn {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .currentIssue .filterBtn:hover {
+  border-color: #fdb913;
+  color: #fdb913;
+}
+
+[data-theme="dark"] .currentIssue .filterBtn.active {
+  background: #fdb913;
+  border-color: #fdb913;
+  color: #000;
+}
+
+[data-theme="dark"] .currentIssue .resultsInfo {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .currentIssue .publicationCard {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .currentIssue .cardTitle {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .currentIssue .authors,
+[data-theme="dark"] .currentIssue .downloads {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .currentIssue .abstract {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .currentIssue .cardFooter {
+  border-top-color: #3a3a3a;
+}
+
+/* =======================
    RESPONSIVE
 ======================= */
 @media (max-width: 768px) {

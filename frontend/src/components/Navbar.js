@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { ChevronDown, Moon } from "lucide-react";
+import { ChevronDown, Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTheme } from "../context/ThemeContext";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const { theme, toggleTheme } = useTheme();
 
   const openMenu = (name) => setOpenDropdown(name);
   const closeMenu = () => setOpenDropdown(null);
@@ -113,8 +115,8 @@ export default function Navbar() {
 
         {/* RIGHT ICON */}
         <div className="rightSection">
-          <button className="themeToggle">
-            <Moon size={18} />
+          <button className="themeToggle" onClick={toggleTheme} aria-label="Toggle theme">
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
         </div>
       </div>

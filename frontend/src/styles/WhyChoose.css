@@ -89,3 +89,33 @@
     grid-column: span 1;
   }
 }
+
+/* ======================
+   DARK MODE
+====================== */
+[data-theme="dark"] .why {
+  background: #1a1a1a;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .why h2 {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .subtitle {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .card {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .card p {
+  color: #d1d5db;
+}

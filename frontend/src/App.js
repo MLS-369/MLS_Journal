@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhyChoose from "./components/WhyChoose";
@@ -17,7 +18,7 @@ import SubmitManuscript from "./components/SubmitManuscript";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       {/* Navbar visible on all pages */}
       <Navbar />
 
@@ -49,7 +50,7 @@ function App() {
 
       {/* Footer visible on all pages */}
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

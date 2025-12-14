@@ -102,6 +102,53 @@
 /* ===========================
    RESPONSIVE
 =========================== */
+/* ===========================
+   DARK MODE
+=========================== */
+[data-theme="dark"] .ethicsPage {
+  background: #121212;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .ethicsTitle {
+  color: #e5e7eb;
+  border-bottom-color: #fdb913;
+}
+
+[data-theme="dark"] .ethicsSubtitle {
+  background: #2a2a2a;
+  border-left-color: #fdb913;
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .ethicsIntro {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .ethicsItem {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  border-left-color: #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .ethicsItem h3 {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .ethicsItem p {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .ethicsFinal {
+  background: #2a2a2a;
+  border-color: #fdb913;
+}
+
+[data-theme="dark"] .ethicsFinal p {
+  color: #e5e7eb;
+}
+
 @media (max-width: 768px) {
   .ethicsTitle {
     font-size: 2rem;
