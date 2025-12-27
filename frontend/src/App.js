@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
+import PageTransition from "./components/PageTransition";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhyChoose from "./components/WhyChoose";
@@ -27,25 +28,95 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <PageTransition>
               <Hero />
               <WhyChoose />
               <Cta />
-            </>
+            </PageTransition>
           }
         />
 
         {/* ABOUT PAGE */}
-        <Route path="/about" element={<About />} />
-        <Route path="/current-issue" element={<CurrentIssue />} />
-        <Route path="/submission-guidelines" element={<Submissionguidline />} />
-        <Route path="/editorial-board" element={<Editorialboard />} />
-        <Route path="/peer-review-process" element={<PeerReviewProcessPage />} />
-        <Route path="/publication-process" element={<PublicationProcessPage />} />
-        <Route path="/open-access" element={<OpenAccessPolicyPage />} />
-        <Route path="/publication-policy" element={<PublicationPrintPolicy />} />
-        <Route path="/ethics" element={<EthicsStatement />} />
-        <Route path="/submit" element={<SubmitManuscript />} />
+        <Route 
+          path="/about" 
+          element={
+            <PageTransition>
+              <About />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/current-issue" 
+          element={
+            <PageTransition>
+              <CurrentIssue />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/submission-guidelines" 
+          element={
+            <PageTransition>
+              <Submissionguidline />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/editorial-board" 
+          element={
+            <PageTransition>
+              <Editorialboard />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/peer-review-process" 
+          element={
+            <PageTransition>
+              <PeerReviewProcessPage />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/publication-process" 
+          element={
+            <PageTransition>
+              <PublicationProcessPage />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/open-access" 
+          element={
+            <PageTransition>
+              <OpenAccessPolicyPage />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/publication-policy" 
+          element={
+            <PageTransition>
+              <PublicationPrintPolicy />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/ethics" 
+          element={
+            <PageTransition>
+              <EthicsStatement />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/submit" 
+          element={
+            <PageTransition>
+              <SubmitManuscript />
+            </PageTransition>
+          } 
+        />
       </Routes>
 
       {/* Footer visible on all pages */}

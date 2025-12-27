@@ -90,11 +90,12 @@
 ====================== */
 .dropdownContainer {
   position: relative;
+  padding-bottom: 8px; /* Creates hoverable area below button */
 }
 
 .dropdown {
   position: absolute;
-  top: 130%;
+  top: calc(100% + 8px); /* Start right after padding area */
   left: 0;
   display: flex;
   flex-direction: column;        /* ✅ COLUMN FIX */
@@ -104,6 +105,18 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   padding: 0.4rem 0;
   z-index: 1000;
+  margin-top: 0; /* Remove any extra margin */
+}
+
+/* Create invisible bridge area above dropdown for easier hover */
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: transparent;
 }
 
 .dropdownLink {
